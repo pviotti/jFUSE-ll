@@ -3,6 +3,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(JFUSE C)
 
+
 #LIST(APPEND CMAKE_MODULE_PATH "native/cmake_modules")
 
 
@@ -19,8 +20,7 @@ MESSAGE(STATUS "${FUSE_CFLAGS}")
 include_directories(
     native
     ${FUSE_INCLUDE_DIR}
-    /usr/lib/jvm/java-6-openjdk/include/
-    /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Headers/
+    /usr/lib/jvm/java-8-openjdk/include/
 	${JAVA_INCLUDE_PATH}
 	${JAVA_INCLUDE_PATH2}
 )
